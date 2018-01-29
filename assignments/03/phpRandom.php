@@ -1,25 +1,28 @@
 <html>
 <?php
-$out = "";
-$charToUse = "*";
+$out = "*";
+$baseString = "                    ";
 $col = 0;
 $curX = 0;
 $curY = 0;
 $endX = 20;
 $endY = 20;
 $board = array("","","","","","","","","","","","","","","","","","","","");
-for($curY = 0; $curY<$endY; $curY++){
-  if(rand(0,1)) //0 for down, 1 for right
+
+while(curX != 20 && curY != 20){
+  if(rand(0,1)) //0 for up, 1 for right
   {
-    $curX++;
-    $out = $out."*";
+    $board[$curY]=$out;
+    $curY++;
+    //$out = $out."*";
+    
   }
-  else //down
+  else //right
   {
-    //$out = $out.$charToUse;
-    $out . "<br>";
+    $out = $out . "*";
   }
-  echo $out;
+  echo strlen($out);
+  echo "<br>";
   var_dump($board);
 }
 ?>
