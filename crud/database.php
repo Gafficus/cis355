@@ -1,10 +1,11 @@
 <?php
 class Database
 {
-    private static $dbName = 'nagaffne' ;
+
+    private static $dbName = 'dbName' ;
     private static $dbHost = 'localhost' ; //other hosts we just use localhost most often
-    private static $dbUsername = 'nagaffne';
-    private static $dbUserPassword = 'mnj_653ZX';
+    private static $dbUsername = 'username';
+    private static $dbUserPassword = 'password';
      
     private static $cont  = null; //connection object
      
